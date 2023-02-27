@@ -10,5 +10,4 @@ public class Diary {
 	private String diary_title;
 	private String diary_content;
 	private String diary_date;
-
 }
