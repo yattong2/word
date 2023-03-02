@@ -1,8 +1,12 @@
 package com.my.reply.vo;
 
-import lombok.Data;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-@Data
+@Getter @Setter @AllArgsConstructor @NoArgsConstructor
+
 public class Reply {
 	private int reply_num;
 	private String user_id;
