@@ -137,6 +137,13 @@
 <version>4.0.1</version>
 <scope>provided</scope>
 </dependency>
+<!--JSP-->
+<!-- https://mvnrepository.com/artifact/org.apache.tomcat.embed/tomcat-embed-jasper -->
+<dependency>
+    <groupId>org.apache.tomcat.embed</groupId>
+    <artifactId>tomcat-embed-jasper</artifactId>
+    <version>10.1.0</version>
+</dependency>
 </dependencies>
   <build>
     <finalName>mode</finalName>

@@ -13,9 +13,13 @@ import com.zaxxer.hikari.HikariDataSource;
 
 @Configuration
 @ComponentScan(basePackages = {
+		"com.my.board.dao",
+		"com.my.board.service",
+		"com.my.account.dao",
+		"com.my.account.service"
 })
 public class ApplicationContext {
-	
+
 	@Bean
 	public HikariConfig hikariConfig() {//커넥션 풀 사용
 		HikariConfig config = new HikariConfig();
@@ -26,7 +30,7 @@ public class ApplicationContext {
 		config.setMinimumIdle(1);
 		return config;
 	}
-	
+
 	@Bean
 	public HikariDataSource dataSourceHikari() {
 		return new HikariDataSource(hikariConfig());
@@ -40,13 +44,13 @@ public class ApplicationContext {
 		ssfb.setConfigLocation(resource);
 		return ssfb;
 	}
-	
+
 	@Bean
 	public DataSourceTransactionManager transactionManager() {
 		DataSourceTransactionManager dstm = new DataSourceTransactionManager();
 		dstm.setDataSource(dataSourceHikari());
 		return dstm;
 	}
-	
+
 }
 

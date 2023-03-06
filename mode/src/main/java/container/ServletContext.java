@@ -9,7 +9,10 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @Configuration
-@ComponentScan(basePackages = { })
+@ComponentScan(basePackages = {
+		"com.my.account.control",
+		"com.my.board.control"
+})
 @EnableWebMvc // WebApplicationContext컨테이너 구동 설정파일
 public class ServletContext implements WebMvcConfigurer{
 

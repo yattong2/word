@@ -8,14 +8,14 @@
 <setting name="jdbcTypeForNull" value="NULL"/>
 </settings>
 <typeAliases>
-  <typeAlias alias="Member" type="com.my.member.vo.Member"/>
-  <typeAlias alias="Diary" type="com.my.diary.vo.Diary"/>
+  <typeAlias alias="Account" type="com.my.account.vo.AccountVO"/>
+  <typeAlias alias="Diary" type="com.my.diary.vo.DiaryVO"/>
 
 </typeAliases>
 
   <mappers>
     <mapper resource="DiaryMapper.xml"/>
-    <mapper resource="MemberMapper.xml"/>
+    <mapper resource="AccountMapper.xml"/>
    
   </mappers>
 </configuration>
